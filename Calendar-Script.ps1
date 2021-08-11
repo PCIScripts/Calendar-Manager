@@ -1,13 +1,19 @@
 ####################
 # Calendar Script  #
 # Author: DBemrose #
-# Build type: POC  #
-# Build: 2.2.1     #
+# Build: POC-Dev   #
+# Build V: 2.3.0   #
 ####################
-$Script:Version = "2.2.1"
-$Script:Build = "POC"
+$Script:Version = "2.3.0"
+$Script:Build = "POC-DEV"
+##################################################
+# Deprecated functions will be removed in v2.3.1 #
+##################################################
 
-#Login basic function is used when MFA is not involved. This can be deprecated as the LoginMFA function can also be used for non MFA clients as well.
+
+
+#Login basic function is used when MFA is not involved. 
+#This has been deprecated as the LoginMFA function can also be used for non MFA clients as well.
 Function LoginBasic {
     #Asks user for credentials to supply the session with
     $Script:Login = Get-Credential
@@ -157,7 +163,12 @@ Function Set-Calendar-Permission{
 
 #Function to be implemented. This function will provide the ability to remove calendar permissions from a calendar.
 Function Remove-Calendar-Permission{
-
+    $Script:RemoveConfirm = Read-Host "Are you sure you want to remove the permissions to $Script:CalendarSelectedR for the user $Script:UserSelecteda (Y/N)"
+    Switch($Script:RemoveConfirm){
+        Y{Write-Host "Attempting to remove the permissions..."; Remove-MailboxFolderPermission -Identity $Script:CalendarSelectedR -user $Script:UserSelecteda; Return}
+        N{Return}
+        Default{Return}
+    }
 }
 
 #This is the exact same as the edit calendar permission function but for adding the user permissions when there is not already one applied to the calendar.
@@ -244,21 +255,19 @@ Function MainMenu{
 }
 
 #Basic menu system for providing access to Exchange Online.
-#Basic login will be removed soon as the MFA option can handle both
+#Basic login has been removed as the MFA option can handle both
 Function LoginMenu{
     Clear-Host
     Write-Host "Login to Exchange"
-    Write-Host "1. Basic Login"
-    Write-Host "2. MFA Login"
-    Write-Host "3. Delegate Login"
-    Write-Host "4. Back to main menu"
+    Write-Host "1. Login"
+    Write-Host "2. Delegate Login"
+    Write-Host "3. Back to main menu"
     Write-Host "Q. Quit"
     $LMResult = Read-Host "Option"
     Switch($LMResult){
-        1{LoginBasic}
-        2{LoginMFA}
-        3{LoginDelegate}
-        4{MainMenu}
+        1{LoginMFA}
+        2{LoginDelegate}
+        3{MainMenu}
         default{LoginMenu}
         "Q"{Exit}
     }
@@ -283,7 +292,7 @@ Function SelectionMenu {
     If ([string]::IsNullOrEmpty($Script:UserSelecteda)){Write-Host "4. Select User for editing"}Else{Write-Host "4. Selected User for editing" -NoNewline; Write-Host " (" -f gray -NoNewline; Write-Host $Script:UserSelecteda -f green -NoNewline; Write-Host ")" -f gray}
     Write-Host "5. Edit Permission"
     Write-Host "6. Add Permission"
-    Write-Host "7. Remove Calendar Permission (Coming Soon)"
+    Write-Host "7. Remove Calendar Permission (TESTING)"
     Write-Host "8. Back to main menu"
     Write-Host "Q. Quit"
     $SMResult = Read-Host "Option"
@@ -300,8 +309,8 @@ Function SelectionMenu {
         5{Set-Calendar-Permission; Read-Host 'Press Any key to conitnue...'; SelectionMenu}
         #Runs the Add-Calendar-Permission and will then wait for user input. Then it will update the menu
         6{Add-Calendar-Permission; Read-Host 'Press Any key to conitnue...'; SelectionMenu}
-        #This option is not currently implemented yet so it will just reload the menu
-        7{SelectionMenu}
+        #This option is currently being implemented
+        7{Remove-Calendar-Permission; Read-Host 'Press Any key to conitnue...'; SelectionMenu}
         #Takes you back to the main menu
         8{MainMenu}
         #Will reload the selection menu if an option was proivided that was not on the list
