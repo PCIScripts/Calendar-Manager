@@ -6,10 +6,16 @@
 ####################
 $Script:Version = "2.3.0"
 $Script:Build = "POC-DEV"
-##################################################
-# Deprecated functions will be removed in v2.3.1 #
-##################################################
 
+####################
+# Logging Function #
+####################
+Function Logging{
+    $VerbosePreference = "Continue"
+    $Script:OwnPath = Split-Path $MyInvocation.MyCommand.Path
+    $Script:LogPath = "$OwnPath\logs"
+    $Script:LogPathName = Join-Path -Path $LogPath -ChildPath "$($MyInvocation.MyCommand.Name)-$(Get-Date -Format 'dd-MM-yyyy').log"
+}
 
 
 #Login basic function is used when MFA is not involved. 
@@ -400,5 +406,11 @@ Function SelectCalendarMenu{
     SelectionMenu
 }
 
+
+
+#Enable Script Logging
+Start-Transcript $Script:LogPathName -Append
+#Stop script logging on exit
+Register-EngineEvent PowerShell.Exiting -Action {Stop-Transcript}
 #Initial call to the main menu
 MainMenu
