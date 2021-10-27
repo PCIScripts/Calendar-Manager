@@ -5,38 +5,35 @@
 # Build V: 2.3.0   #
 ####################
 $Script:Version = "2.3.0"
-$Script:Build = "POC-DEV"
+$Script:Build = "DEV"
+
+####################
+# Script Settings  #
+####################
+
+
+
 
 ####################
 # Logging Function #
 ####################
-Function Logging{
+Function EnableLogging{
     $VerbosePreference = "Continue"
-    $Script:OwnPath = Split-Path $MyInvocation.MyCommand.Path
+    $Script:OwnPath = Get-Location
     $Script:LogPath = "$OwnPath\logs"
-    $Script:LogPathName = Join-Path -Path $LogPath -ChildPath "$($MyInvocation.MyCommand.Name)-$(Get-Date -Format 'dd-MM-yyyy').log"
+    $Script:LogPathName = Join-Path -Path $LogPath -ChildPath "$("Log")-$(Get-Date -Format 'dd-MM-yyyy').log"
+    Start-Transcript $Script:LogPathName -Append
+    #Stop script logging on exit
+    Register-EngineEvent PowerShell.Exiting -Action {Stop-Transcript}
 }
 
-
-#Login basic function is used when MFA is not involved. 
-#This has been deprecated as the LoginMFA function can also be used for non MFA clients as well.
-Function LoginBasic {
-    #Asks user for credentials to supply the session with
-    $Script:Login = Get-Credential
-    #creates the session to connect to office365 to get ready for connnecting to the client and downloading the Exchange Online powershell cmdlets
-    $Script:Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid -Credential $Script:Login -Authentication Basic -AllowRedirection
-    #Initiates the created session
-    Import-PSSession $Session
-    #Calls the MainMenu Function
-    MainMenu
-}
 
 #Login MFA function is the universal way to login as it accepts MFA and non MFA clients. This does not handle delegate accounts and will need you to login to the client's admin portal
 Function LoginMFA{
     #This imports the ExchangeOnlineManagement Module. This is assumed that the module is already installed but can be easily obtained or an auto install function can be created if needed
     Import-Module -Name ExchangeOnlineManagement
     #initiates a connection with no details so the technician can login as whoever they need
-    Connect-ExchangeOnline
+    Connect-ExchangeOnline -ShowBanner:$False
     #calls the MainMenu function
     MainMenu
 }
@@ -45,6 +42,7 @@ Function LoginMFA{
 Function Get-Users{
     #clears all the text that is on screen
     clear-host
+    IF($Script:users.count -lt 1){
     #Writes to the screen what will be happening next
     Write-host "Getting all users..."
     #Creates a variable that can be used by only the script that will get all the names for the mailboxes in the organization
@@ -64,6 +62,9 @@ Function Get-Users{
     Write-Host ('Found {0} Users' -f $Script:users.count)
     #Calls the SelectUserMenu function
     SelectUserMenu
+}   Else{
+        SelectUserMenu
+    }
 }
 
 #This function does the exact same thing as the one above but for the user you would like to edit for. 
@@ -300,6 +301,7 @@ Function SelectionMenu {
     Write-Host "6. Add Permission"
     Write-Host "7. Remove Calendar Permission (TESTING)"
     Write-Host "8. Back to main menu"
+    Write-Host "R1. Refresh User Select"
     Write-Host "Q. Quit"
     $SMResult = Read-Host "Option"
     Switch($SMResult){
@@ -319,6 +321,7 @@ Function SelectionMenu {
         7{Remove-Calendar-Permission; Read-Host 'Press Any key to conitnue...'; SelectionMenu}
         #Takes you back to the main menu
         8{MainMenu}
+        "R1"{$Script:Users = $null; $Script:UserSelected; SelectionMenu}
         #Will reload the selection menu if an option was proivided that was not on the list
         default{SelectionMenu}
         "Q"{Exit}
@@ -409,8 +412,6 @@ Function SelectCalendarMenu{
 
 
 #Enable Script Logging
-Start-Transcript $Script:LogPathName -Append
-#Stop script logging on exit
-Register-EngineEvent PowerShell.Exiting -Action {Stop-Transcript}
+EnableLogging
 #Initial call to the main menu
 MainMenu
