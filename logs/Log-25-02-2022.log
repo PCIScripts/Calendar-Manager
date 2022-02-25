@@ -1,0 +1,1183 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220225152350
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 353672
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-25-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+PS>TerminatingError(New-ExoPSSession): "One or more errors occurred."
+>> TerminatingError(New-ExoPSSession): "One or more errors occurred."
+>> TerminatingError(New-ExoPSSession): "One or more errors occurred."
+>> TerminatingError(New-ExoPSSession): "One or more errors occurred."
+>> TerminatingError(New-ExoPSSession): "One or more errors occurred."
+>> TerminatingError(New-ExoPSSession): "One or more errors occurred."
+>> TerminatingError(New-ExoPSSession): "One or more errors occurred."
+One or more errors occurred.
+New-ExoPSSession : One or more errors occurred.
+At C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET
+LTD\Documents\WindowsPowerShell\Modules\ExchangeOnlineManagement\2.0.5\netFramework\ExchangeOnlineManagement.psm1:475
+char:30
++ ... PSSession = New-ExoPSSession -ExchangeEnvironmentName $ExchangeEnviro ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [New-ExoPSSession], AggregateException
+    + FullyQualifiedErrorId : System.AggregateException,Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSess
+   ion
+
+PS C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager> .\Calendar-Script.ps1
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-25-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+2      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected philipdykes
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User philipdykes
+1 - philipdykes\Calendar
+2 - philipdykes\Calendar Logging
+
+You selected philipdykes\Calendar
+This is interpreted as philipdykes:\Calendar
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected ruth.connellan
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+ruth.connellan
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  philipdykes:\Calendar With the following settings:
+User to add: ruth.connellan
+Permissions: Reviewer
+Adding the Permission...
+
+RunspaceId             : 2eb7d30b-6035-431c-88d7-4ccab50c58d0
+Identity               : philipdykes:\Calendar
+FolderName             : Calendar
+User                   : Ruth Connellan
+AccessRights           : {Reviewer}
+SharingPermissionFlags :
+IsValid                : True
+ObjectState            : New
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+ruth.connellan
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected kate.morgan
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+kate.morgan
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  philipdykes:\Calendar With the following settings:
+User to add: kate.morgan
+Permissions: Reviewer
+Adding the Permission...
+
+RunspaceId             : 2eb7d30b-6035-431c-88d7-4ccab50c58d0
+Identity               : philipdykes:\Calendar
+FolderName             : Calendar
+User                   : Kate Morgan
+AccessRights           : {Reviewer}
+SharingPermissionFlags :
+IsValid                : True
+ObjectState            : New
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+kate.morgan
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  philipdykes:\Calendar With the following settings:
+User to add: kate.morgan
+Permissions: Reviewer
+Adding the Permission...
+An existing permission entry was found for user: Kate Morgan.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=LOYP265MB2064,RequestId=23a44f3b-3027-4046-8db5-216d37a248bd,TimeStamp=25/02/2022 
+16:17:50] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 
+E7654E07,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+An existing permission entry was found for user: Kate Morgan.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=LOYP265MB2064,RequestId=23a44f3b-3027-4046-8db5-216d37a248bd,TimeStamp=25/02/202
+   2 16:17:50] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] E7654E07,Microsoft.Exchange.Manag
+  ement.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+kate.morgan
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected pauline.twigger
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+pauline.twigger
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  philipdykes:\Calendar With the following settings:
+User to add: pauline.twigger
+Permissions: Reviewer
+Adding the Permission...
+
+RunspaceId             : 2eb7d30b-6035-431c-88d7-4ccab50c58d0
+Identity               : philipdykes:\Calendar
+FolderName             : Calendar
+User                   : Pauline Twigger
+AccessRights           : {Reviewer}
+SharingPermissionFlags :
+IsValid                : True
+ObjectState            : New
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+pauline.twigger
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected emily.skipper
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+emily.skipper
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  philipdykes:\Calendar With the following settings:
+User to add: emily.skipper
+Permissions: Reviewer
+Adding the Permission...
+
+RunspaceId             : 2eb7d30b-6035-431c-88d7-4ccab50c58d0
+Identity               : philipdykes:\Calendar
+FolderName             : Calendar
+User                   : Emily Skipper
+AccessRights           : {Reviewer}
+SharingPermissionFlags :
+IsValid                : True
+ObjectState            : New
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+philipdykes
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+emily.skipper
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected ruth.connellan
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+philipdykes:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+emily.skipper
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User ruth.connellan
+1 - ruth.connellan\Calendar
+2 - ruth.connellan\Calendar Logging
+
+You selected ruth.connellan\Calendar
+This is interpreted as ruth.connellan:\Calendar
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+emily.skipper
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected philipdykes
+
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+philipdykes
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+philipdykes
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  ruth.connellan:\Calendar With the following settings:
+User to add: philipdykes
+Permissions: Reviewer
+Adding the Permission...
+An existing permission entry was found for user: Philip Dykes.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=LOYP265MB2064,RequestId=956aedf9-8124-4929-9750-ab7e75e005fa,TimeStamp=25/02/2022 
+16:20:42] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 
+33E8E8C,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+An existing permission entry was found for user: Philip Dykes.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=LOYP265MB2064,RequestId=956aedf9-8124-4929-9750-ab7e75e005fa,TimeStamp=25/02/202
+   2 16:20:42] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 33E8E8C,Microsoft.Exchange.Manage
+  ment.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+philipdykes
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+
+
+
+User           AccessRights
+----           ------------
+Default        {LimitedDetails}
+Anonymous      {None}
+Wendy Graham   {Reviewer}
+Philip Dykes   {Reviewer}
+Emily Skipper  {Reviewer}
+Joanna Simmons {Reviewer}
+Kate Morgan    {Reviewer}
+
+
+
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+philipdykes
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 56 Users
+1 - amy.casey
+2 - andy.stratton
+3 - orders
+4 - ardenburg
+5 - Commercial
+6 - Comms
+7 - Conference Room
+8 - customerservice
+9 - David Southey
+10 - dawn.jones
+11 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+12 - Distributions
+13 - EDI
+14 - emily.skipper
+15 - emma
+16 - emma.stephens
+17 - Enquires
+18 - exchequer
+19 - Export Orders
+20 - georgia.davies
+21 - Holiday2020
+22 - Ian.Clapham
+23 - jennifer.dobson
+24 - joanna.hoadley
+25 - Julie.Scott
+26 - kate.morgan
+27 - kaye.besbeech
+28 - Kerry.Hartley
+29 - Lois.Wakeford
+30 - Luke.Maddin
+31 - marketting
+32 - mary.peek
+33 - Meeting Room
+34 - Monique.Sommer
+35 - neil.hammond
+36 - ness.bird
+37 - Nutrition
+38 - pauline.twigger
+39 - Pauline Willis
+40 - itfirst
+41 - philipdykes
+42 - Price.Monitoring
+43 - Purchase Ledger
+44 - ruth.connellan
+45 - Sales.Admin
+46 - Sales Ledger
+47 - Sandra.Flegg
+48 - sarah.churcher
+49 - savannah.demare
+50 - Sharon.Edwards
+51 - Sophie.Hughes
+52 - Sponsorship
+53 - Terry Jones
+54 - tracey.watkins
+55 - Val Botting
+56 - Wendy Graham
+
+You selected pauline.twigger
+
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+pauline.twigger
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  ruth.connellan:\Calendar With the following settings:
+User to add: pauline.twigger
+Permissions: Reviewer
+Adding the Permission...
+
+Permissions have been set!
+FolderName User            AccessRights SharingPermissionFlags
+---------- ----            ------------ ----------------------
+Calendar   Pauline Twigger {Reviewer}
+
+Selection Menu
+1. Select User
+ (
+ruth.connellan
+)
+2. Select Calendar
+ (
+ruth.connellan:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+pauline.twigger
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit

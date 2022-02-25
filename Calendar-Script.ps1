@@ -299,7 +299,7 @@ Function SelectionMenu {
     If ([string]::IsNullOrEmpty($Script:UserSelecteda)){Write-Host "4. Select User for editing"}Else{Write-Host "4. Selected User for editing" -NoNewline; Write-Host " (" -f gray -NoNewline; Write-Host $Script:UserSelecteda -f green -NoNewline; Write-Host ")" -f gray}
     Write-Host "5. Edit Permission"
     Write-Host "6. Add Permission"
-    Write-Host "7. Remove Calendar Permission (TESTING)"
+    Write-Host "7. Remove Calendar Permission"
     Write-Host "8. Back to main menu"
     Write-Host "R1. Refresh User Select"
     Write-Host "Q. Quit"

@@ -1,0 +1,656 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220127140417
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 18532
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-27-01-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 249 Users
+1 - AbbieUnwin
+2 - Administrator-BC-MAIL.BrandonCentre.local
+3 - AgnesMosabela
+4 - aimeemorgan
+5 - aldowilliams
+6 - AlexanderSkarbowski
+7 - alicechesterfield
+8 - allanramsay
+9 - allysonhollidge
+10 - AmyHumphries
+11 - AmySchofield
+12 - andrewcapey
+13 - andrewchambers
+14 - AnetaStamenova
+15 - AnitaReddy
+16 - annaclifford
+17 - annariddell
+18 - antigonikaliviotis
+19 - Applications
+20 - BarbaraRishworth
+21 - barbaratresca
+22 - BasilTyson
+23 - BESAdmin
+24 - billnuttall
+25 - brandonreach
+26 - CarlyMacDonald
+27 - carolinechan
+28 - carolineglynn
+29 - CarolineMoore
+30 - CassandraGelmon
+31 - CatchAll
+32 - CeciliaRowson
+33 - charity_036201c950
+34 - CharlesWells
+35 - CharlotteReynolds
+36 - CharmaineElliott
+37 - cheriemorgan
+38 - ChiomaOnyekwuluje
+39 - CiaranBiggins
+40 - ClaireButler
+41 - ClaireMcCoy
+42 - ClareDrea
+43 - claudiaruatti
+44 - ClaudiaZonneveld
+45 - coletteturner
+46 - Contraception
+47 - Counselling
+48 - darrenisaac
+49 - davidritchie
+50 - deancharlery
+51 - deborahferro
+52 - DeniseMaze
+53 - devantejimmie
+54 - DianeEstwick
+55 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+56 - DoloresCurrie
+57 - DominiqueGolden
+58 - DropInRoom
+59 - Drum
+60 - edwardmocatta
+61 - eleanorbrookhouse
+62 - eleanorcalver
+63 - EleanorSherringtonSmith
+64 - elliegoldblatt
+65 - ElsaHeald
+66 - emilycallard
+67 - emmacooper
+68 - EmmaSainsbury
+69 - emmasaunders
+70 - EmmaShapero
+71 - EmmaSilver
+72 - estelle.richardson-mccoll
+73 - eugenialapteva
+74 - familyservice
+75 - feedback
+76 - FolukeOyinlola
+77 - francescacacucci
+78 - Front Office - Desk 1 - Near Door
+79 - Front Office - Desk 2- Middle
+80 - Front Office - Desk 3 - Far Corner
+81 - frontofficelocum
+82 - fundraising
+83 - GalinaRakova
+84 - GeoffreyBaruch
+85 - GeorgiaReed
+86 - georginacox
+87 - georginalehmann
+88 - giuliavignali
+89 - gracewest
+90 - Hannahjenkins
+91 - HarrietClarkson
+92 - harrygranger-howell
+93 - HelenMontgomery
+94 - hollymattock
+95 - HR-Admin
+96 - Info
+97 - ioannavrouva
+98 - isastagando
+99 - IzzyWoolrych
+100 - jackgilgunn
+101 - JacquelineCannon
+102 - jacynthgrundy
+103 - JamesHanley
+104 - JasdeepGrewal
+105 - JayneEvans
+106 - JenIllman
+107 - jennifercantor
+108 - JennyReadings
+109 - jessicaquarshie
+110 - joannastronach
+111 - johnanderson
+112 - jonathantait
+113 - josephmetcalf-mcqueeney
+114 - juliabrown
+115 - JuliaMarotti
+116 - katarzynakapel
+117 - KateHarman
+118 - katieorr
+119 - KatieOsullivan
+120 - keyaprabhu
+121 - kieranseale
+122 - kiranleonard
+123 - KirstyRatcliffe
+124 - Kitchen
+125 - Large Office - Desk 1 - Window Side, Away from door
+126 - Large Office - Desk 2 - Window Side - LargeNear Door
+127 - Large Office - Desk 3 - Wall Side - Away from door
+128 - Large Office - Desk 4 - Wall Side - Near door
+129 - Large Office - Desk 5 - By Cupboards
+130 - leefrancis
+131 - lesleyjones
+132 - LeylaHafezi
+133 - LildoniaLawrence
+134 - Lillie.Stoute
+135 - londingijnali
+136 - lornahobbs
+137 - LornaVincent
+138 - lorrainemorris
+139 - LouiePong
+140 - lucymoore
+141 - lucyparakhina
+142 - lucyrudkin
+143 - lucytobinhoward
+144 - magdalenawydra
+145 - maisieking
+146 - MarcTibber
+147 - MariaShittu
+148 - marianavargas
+149 - MarkBland
+150 - matthewknox
+151 - MauroProsperio
+152 - Meeting Room
+153 - Meetings
+154 - MelanieOBrien
+155 - MennaRose
+156 - MichaelaMartin
+157 - MichelleDrummond
+158 - michellethomas
+159 - migadmin
+160 - MikeDavis
+161 - MoiraLamond
+162 - nataliekirton
+163 - NatalieMcIntosh
+164 - natalieroswess-bruce
+165 - NatashaGold
+166 - NathalieBallard
+167 - nicolamoore
+168 - ninanightingale
+169 - olgapalmqvist
+170 - Oncall
+171 - OsiroImeodemhe
+172 - pamsingh
+173 - pamelalindergaard
+174 - patrickcambell
+175 - patrickorourke
+176 - paulking
+177 - pavlosrossolymos
+178 - Payroll
+179 - petersuchet
+180 - phillipamatthews
+181 - PhoebeTansley
+182 - photoproject
+183 - pritpalsinghanand
+184 - rachelklein
+185 - rebeccaallgood
+186 - Reception
+187 - RhiannonJones
+188 - RichardGrove
+189 - RichardTaffler
+190 - robertkocur
+191 - robynberesford
+192 - Room 1
+193 - Room 2
+194 - Room3
+195 - Room 4
+196 - Room 5
+197 - Room 6
+198 - RoomBooking
+199 - rosemarygordon
+200 - RummanHoque
+201 - SallyBarker
+202 - SamParker
+203 - samweston
+204 - SamanthaYoung
+205 - SaraLakin
+206 - SarahBowles
+207 - selinakapasi
+208 - SHOutreach
+209 - sherry.lalsie-simpkins
+210 - ShreyaSinghal
+211 - SilviaBelmondo
+212 - simonboddis
+213 - simonebailey
+214 - siobhanbryant
+215 - SivaSuresh
+216 - Small Office - Desk 1 - Door Side, away from window
+217 - Small Office - Desk 2 - Door side - Near Window
+218 - Small Office - Desk 3- Wall Side - Away from window
+219 - Small Office - Desk 4 - Wall Side, Near Window
+220 - sophieraymont
+221 - StaceyMiller
+222 - stellabarlow
+223 - stellamoore
+224 - SBSSTSWorker
+225 - suesowerby
+226 - Surgery
+227 - susanmunroe
+228 - talyawest
+229 - tandeepphull
+230 - TaniaSalvo
+231 - temitopeademosu
+232 - terrysegal
+233 - training
+234 - unaobrien
+235 - VanessaCyriacopoulos
+236 - ronivankets
+237 - VictoriaCorbishley
+238 - Waiting Room
+239 - Young Ambassadors20211007061900
+240 - youthambassadors
+241 - YP Counsellor20211222090116
+242 - Zahrahal-Bejawi
+243 - ZoomPro1
+244 - ZoomPro2
+245 - ZoomPro3
+246 - ZoomPro4
+247 - ZoomPro5
+248 - ZoraGoodland
+249 - ZuzanaDufkova
+
+You selected MariaShittu
+Selection Menu
+1. Select User
+ (
+MariaShittu
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User MariaShittu
+1 - MariaShittu\Calendar
+2 - MariaShittu\Calendar Logging
+
+You selected MariaShittu\Calendar
+This is interpreted as MariaShittu:\Calendar
+Selection Menu
+1. Select User
+ (
+MariaShittu
+)
+2. Select Calendar
+ (
+MariaShittu:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 249 Users
+1 - AbbieUnwin
+2 - Administrator-BC-MAIL.BrandonCentre.local
+3 - AgnesMosabela
+4 - aimeemorgan
+5 - aldowilliams
+6 - AlexanderSkarbowski
+7 - alicechesterfield
+8 - allanramsay
+9 - allysonhollidge
+10 - AmyHumphries
+11 - AmySchofield
+12 - andrewcapey
+13 - andrewchambers
+14 - AnetaStamenova
+15 - AnitaReddy
+16 - annaclifford
+17 - annariddell
+18 - antigonikaliviotis
+19 - Applications
+20 - BarbaraRishworth
+21 - barbaratresca
+22 - BasilTyson
+23 - BESAdmin
+24 - billnuttall
+25 - brandonreach
+26 - CarlyMacDonald
+27 - carolinechan
+28 - carolineglynn
+29 - CarolineMoore
+30 - CassandraGelmon
+31 - CatchAll
+32 - CeciliaRowson
+33 - charity_036201c950
+34 - CharlesWells
+35 - CharlotteReynolds
+36 - CharmaineElliott
+37 - cheriemorgan
+38 - ChiomaOnyekwuluje
+39 - CiaranBiggins
+40 - ClaireButler
+41 - ClaireMcCoy
+42 - ClareDrea
+43 - claudiaruatti
+44 - ClaudiaZonneveld
+45 - coletteturner
+46 - Contraception
+47 - Counselling
+48 - darrenisaac
+49 - davidritchie
+50 - deancharlery
+51 - deborahferro
+52 - DeniseMaze
+53 - devantejimmie
+54 - DianeEstwick
+55 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+56 - DoloresCurrie
+57 - DominiqueGolden
+58 - DropInRoom
+59 - Drum
+60 - edwardmocatta
+61 - eleanorbrookhouse
+62 - eleanorcalver
+63 - EleanorSherringtonSmith
+64 - elliegoldblatt
+65 - ElsaHeald
+66 - emilycallard
+67 - emmacooper
+68 - EmmaSainsbury
+69 - emmasaunders
+70 - EmmaShapero
+71 - EmmaSilver
+72 - estelle.richardson-mccoll
+73 - eugenialapteva
+74 - familyservice
+75 - feedback
+76 - FolukeOyinlola
+77 - francescacacucci
+78 - Front Office - Desk 1 - Near Door
+79 - Front Office - Desk 2- Middle
+80 - Front Office - Desk 3 - Far Corner
+81 - frontofficelocum
+82 - fundraising
+83 - GalinaRakova
+84 - GeoffreyBaruch
+85 - GeorgiaReed
+86 - georginacox
+87 - georginalehmann
+88 - giuliavignali
+89 - gracewest
+90 - Hannahjenkins
+91 - HarrietClarkson
+92 - harrygranger-howell
+93 - HelenMontgomery
+94 - hollymattock
+95 - HR-Admin
+96 - Info
+97 - ioannavrouva
+98 - isastagando
+99 - IzzyWoolrych
+100 - jackgilgunn
+101 - JacquelineCannon
+102 - jacynthgrundy
+103 - JamesHanley
+104 - JasdeepGrewal
+105 - JayneEvans
+106 - JenIllman
+107 - jennifercantor
+108 - JennyReadings
+109 - jessicaquarshie
+110 - joannastronach
+111 - johnanderson
+112 - jonathantait
+113 - josephmetcalf-mcqueeney
+114 - juliabrown
+115 - JuliaMarotti
+116 - katarzynakapel
+117 - KateHarman
+118 - katieorr
+119 - KatieOsullivan
+120 - keyaprabhu
+121 - kieranseale
+122 - kiranleonard
+123 - KirstyRatcliffe
+124 - Kitchen
+125 - Large Office - Desk 1 - Window Side, Away from door
+126 - Large Office - Desk 2 - Window Side - LargeNear Door
+127 - Large Office - Desk 3 - Wall Side - Away from door
+128 - Large Office - Desk 4 - Wall Side - Near door
+129 - Large Office - Desk 5 - By Cupboards
+130 - leefrancis
+131 - lesleyjones
+132 - LeylaHafezi
+133 - LildoniaLawrence
+134 - Lillie.Stoute
+135 - londingijnali
+136 - lornahobbs
+137 - LornaVincent
+138 - lorrainemorris
+139 - LouiePong
+140 - lucymoore
+141 - lucyparakhina
+142 - lucyrudkin
+143 - lucytobinhoward
+144 - magdalenawydra
+145 - maisieking
+146 - MarcTibber
+147 - MariaShittu
+148 - marianavargas
+149 - MarkBland
+150 - matthewknox
+151 - MauroProsperio
+152 - Meeting Room
+153 - Meetings
+154 - MelanieOBrien
+155 - MennaRose
+156 - MichaelaMartin
+157 - MichelleDrummond
+158 - michellethomas
+159 - migadmin
+160 - MikeDavis
+161 - MoiraLamond
+162 - nataliekirton
+163 - NatalieMcIntosh
+164 - natalieroswess-bruce
+165 - NatashaGold
+166 - NathalieBallard
+167 - nicolamoore
+168 - ninanightingale
+169 - olgapalmqvist
+170 - Oncall
+171 - OsiroImeodemhe
+172 - pamsingh
+173 - pamelalindergaard
+174 - patrickcambell
+175 - patrickorourke
+176 - paulking
+177 - pavlosrossolymos
+178 - Payroll
+179 - petersuchet
+180 - phillipamatthews
+181 - PhoebeTansley
+182 - photoproject
+183 - pritpalsinghanand
+184 - rachelklein
+185 - rebeccaallgood
+186 - Reception
+187 - RhiannonJones
+188 - RichardGrove
+189 - RichardTaffler
+190 - robertkocur
+191 - robynberesford
+192 - Room 1
+193 - Room 2
+194 - Room3
+195 - Room 4
+196 - Room 5
+197 - Room 6
+198 - RoomBooking
+199 - rosemarygordon
+200 - RummanHoque
+201 - SallyBarker
+202 - SamParker
+203 - samweston
+204 - SamanthaYoung
+205 - SaraLakin
+206 - SarahBowles
+207 - selinakapasi
+208 - SHOutreach
+209 - sherry.lalsie-simpkins
+210 - ShreyaSinghal
+211 - SilviaBelmondo
+212 - simonboddis
+213 - simonebailey
+214 - siobhanbryant
+215 - SivaSuresh
+216 - Small Office - Desk 1 - Door Side, away from window
+217 - Small Office - Desk 2 - Door side - Near Window
+218 - Small Office - Desk 3- Wall Side - Away from window
+219 - Small Office - Desk 4 - Wall Side, Near Window
+220 - sophieraymont
+221 - StaceyMiller
+222 - stellabarlow
+223 - stellamoore
+224 - SBSSTSWorker
+225 - suesowerby
+226 - Surgery
+227 - susanmunroe
+228 - talyawest
+229 - tandeepphull
+230 - TaniaSalvo
+231 - temitopeademosu
+232 - terrysegal
+233 - training
+234 - unaobrien
+235 - VanessaCyriacopoulos
+236 - ronivankets
+237 - VictoriaCorbishley
+238 - Waiting Room
+239 - Young Ambassadors20211007061900
+240 - youthambassadors
+241 - YP Counsellor20211222090116
+242 - Zahrahal-Bejawi
+243 - ZoomPro1
+244 - ZoomPro2
+245 - ZoomPro3
+246 - ZoomPro4
+247 - ZoomPro5
+248 - ZoraGoodland
+249 - ZuzanaDufkova
+
+You selected Counselling
+
+Selection Menu
+1. Select User
+ (
+MariaShittu
+)
+2. Select Calendar
+ (
+MariaShittu:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Counselling
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  MariaShittu:\Calendar With the following settings:
+User to add: Counselling
+Permissions: Editor
+Adding the Permission...
+The user "Counselling" was found in Active Directory but isn't valid to use for permissions. Try an SMTP address 
+instead.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], InvalidInternalUserIdException
+    + FullyQualifiedErrorId : [Server=LO0P123MB4044,RequestId=90ed343c-27f9-47b9-843e-7e7fb57edde9,TimeStamp=27/01/2022 
+14:06:27] [FailureCategory=Cmdlet-InvalidInternalUserIdException] 
+B1688057,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+The user "Counselling" was found in Active Directory but isn't valid to use for permissions. Try an SMTP address
+instead.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], InvalidInternalUserIdException
+    + FullyQualifiedErrorId : [Server=LO0P123MB4044,RequestId=90ed343c-27f9-47b9-843e-7e7fb57edde9,TimeStamp=27/01/202
+   2 14:06:27] [FailureCategory=Cmdlet-InvalidInternalUserIdException] B1688057,Microsoft.Exchange.Management.StoreTa
+  sks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!

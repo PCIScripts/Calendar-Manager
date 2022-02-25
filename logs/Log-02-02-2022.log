@@ -1,0 +1,306 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220202161933
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 179368
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-02-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 45 Users
+1 - administrator
+2 - Adrian.Raub
+3 - Alastair Cameron
+4 - alison.nolan
+5 - Anne.Roques
+6 - anne.wisselersoos
+7 - Celine.Fontaine
+8 - Charlotte.Ward
+9 - Chris Lang
+10 - clint.evans
+11 - Derek Klyhn
+12 - dirk.eilers
+13 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+14 - ebba.bahl
+15 - Elizabeth Mullins
+16 - Ella Lui
+17 - Emma Maslin
+18 - Henry Marsden
+19 - iain.maclean
+20 - ingrid.dietz
+21 - Jason.Rabinowitz
+22 - Jennifer Powell
+23 - Jeremy.Keeley
+24 - Joanna Corr
+25 - John Morton
+26 - Jon Lurie
+27 - Karen.Dawson
+28 - Kat.Suchodolska
+29 - lauren.ainsley
+30 - Main Calendar
+31 - Mike Mister
+32 - mike.mister
+33 - info
+34 - nigel.spencer
+35 - Ori Wiener
+36 - portia.hickey
+37 - Pricing Training
+38 - Supportnet
+39 - Samantha Siberry
+40 - Steve Maslin
+41 - Sue Holland
+42 - Surveys
+43 - Susanne.Ohms
+44 - Toby Hoskins
+45 - Vicki.Smith
+
+You selected lauren.ainsley
+Selection Menu
+1. Select User
+ (
+lauren.ainsley
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User lauren.ainsley
+1 - lauren.ainsley\Calendar
+2 - lauren.ainsley\Calendar Logging
+
+You selected lauren.ainsley\Calendar
+This is interpreted as lauren.ainsley:\Calendar
+Selection Menu
+1. Select User
+ (
+lauren.ainsley
+)
+2. Select Calendar
+ (
+lauren.ainsley:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 45 Users
+1 - administrator
+2 - Adrian.Raub
+3 - Alastair Cameron
+4 - alison.nolan
+5 - Anne.Roques
+6 - anne.wisselersoos
+7 - Celine.Fontaine
+8 - Charlotte.Ward
+9 - Chris Lang
+10 - clint.evans
+11 - Derek Klyhn
+12 - dirk.eilers
+13 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+14 - ebba.bahl
+15 - Elizabeth Mullins
+16 - Ella Lui
+17 - Emma Maslin
+18 - Henry Marsden
+19 - iain.maclean
+20 - ingrid.dietz
+21 - Jason.Rabinowitz
+22 - Jennifer Powell
+23 - Jeremy.Keeley
+24 - Joanna Corr
+25 - John Morton
+26 - Jon Lurie
+27 - Karen.Dawson
+28 - Kat.Suchodolska
+29 - lauren.ainsley
+30 - Main Calendar
+31 - Mike Mister
+32 - mike.mister
+33 - info
+34 - nigel.spencer
+35 - Ori Wiener
+36 - portia.hickey
+37 - Pricing Training
+38 - Supportnet
+39 - Samantha Siberry
+40 - Steve Maslin
+41 - Sue Holland
+42 - Surveys
+43 - Susanne.Ohms
+44 - Toby Hoskins
+45 - Vicki.Smith
+
+You selected Samantha Siberry
+
+Selection Menu
+1. Select User
+ (
+lauren.ainsley
+)
+2. Select Calendar
+ (
+lauren.ainsley:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Samantha Siberry
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  lauren.ainsley:\Calendar With the following settings:
+User to add: Samantha Siberry
+Permissions: Editor
+Adding the Permission...
+An existing permission entry was found for user: Samantha Siberry.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DB7PR04MB4876,RequestId=f94db01e-174e-4482-a816-1ad99bbfd3ce,TimeStamp=02/02/2022 
+16:21:03] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 
+55C38B38,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+An existing permission entry was found for user: Samantha Siberry.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DB7PR04MB4876,RequestId=f94db01e-174e-4482-a816-1ad99bbfd3ce,TimeStamp=02/02/202
+   2 16:21:03] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 55C38B38,Microsoft.Exchange.Manag
+  ement.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+lauren.ainsley
+)
+2. Select Calendar
+ (
+lauren.ainsley:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Samantha Siberry
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to edit the calendar  lauren.ainsley:\Calendar With the following settings:
+User to edit: Samantha Siberry
+Permissions: Editor
+Editing the calendar...
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+lauren.ainsley
+)
+2. Select Calendar
+ (
+lauren.ainsley:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Samantha Siberry
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit

@@ -1,0 +1,1265 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220211132026
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 68184
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-11-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+**********************
+Windows PowerShell transcript start
+Start time: 20220211132246
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 73520
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-11-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 518 Users
+1 - Susan Derbyshire
+2 - Diana Tyrer
+3 - fundraising
+4 - Mark Jones
+5 - Julie Forman
+6 - Colin Taylor
+7 - eberners-lee
+8 - Sophie Bradford
+9 - Support at Home Central PR, CH, SRibble
+10 - David Ashton (Volunteer)
+11 - Joanne Rawlinson
+12 - Rob Ledger
+13 - Nicola Williams
+14 - ZGiltrow
+15 - Laura Murray
+16 - Stuart Collins
+17 - aquraishi-rewaj
+18 - DGill
+19 - Peter Holton
+20 - Anne Burt
+21 - Michelle Neale
+22 - RHarrison
+23 - Ruth Cassidy
+24 - DMinion
+25 - Tania Curley
+26 - Karen Morris
+27 - Lindsay Reid
+28 - Janet Hurst
+29 - bhobson
+30 - Support at Home Central WL’s
+31 - Laura Roberts
+32 - Sharon Campbell
+33 - CHughes
+34 - Stacey Harris
+35 - Bridget Coldwell
+36 - Christine Drake
+37 - Elaine Zirins
+38 - Ruby Taib
+39 - Rebecca Lea
+40 - Admin Expenses
+41 - Sophie Royles
+42 - CHerbert
+43 - Alison Thornton
+44 - CChantrell
+45 - Yvonne Ward
+46 - smuruganantham
+47 - Support at Home North F&W
+48 - Lynn Hope
+49 - JMason
+50 - Gary Gilboy
+51 - Steven Kearsley
+52 - Chorley Lifestyle Centre Calendar
+53 - Yvette Powell
+54 - Susan Wright.old
+55 - HAS Pennine - RBH
+56 - Teresa Spear
+57 - face.book
+58 - Fiona Sims
+59 - Knight Hill House Offices Calendar
+60 - Danielle Campbell
+61 - Rozeena Khan
+62 - KMassey
+63 - Christine Gerrard
+64 - RHutchinson
+65 - Gina Wright
+66 - Lynne Allan
+67 - Patricia Clarke
+68 - Lesley Bowden
+69 - Tina Lewis
+70 - Tony Baxter
+71 - Dorothy Stableford
+72 - CDonelan
+73 - Teri Stephenson
+74 - jschild
+75 - Allan Smith
+76 - Shaheena Ali
+77 - Lynda Burke
+78 - Steven Wise
+79 - Fiona Westwell
+80 - Janice Clarke
+81 - HFerguson
+82 - Fiona Robinson
+83 - Pam French
+84 - Jeanette Hale
+85 - JJones
+86 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+87 - Leanne Macdonald
+88 - RPennington
+89 - LHaworth
+90 - KBrooks
+91 - Heather Owen
+92 - Les Caton
+93 - Jean-Bruno Villette
+94 - Scanner
+95 - Julie Christian
+96 - Janet Procter
+97 - Alison Read
+98 - HAS Pennine - BGH
+99 - Edwin Neil
+100 - gali
+101 - sgriffiths
+102 - kpeters
+103 - Kate Brown
+104 - LHyatt
+105 - dspencer
+106 - Home Help Services
+107 - HAS North - RLI
+108 - Olivia Rath
+109 - nshah
+110 - Natasha Mellor
+111 - RWigmore
+112 - Nina Hatfield
+113 - Ella Hill
+114 - Southport Insurance Office
+115 - arawcliffe
+116 - Payments
+117 - cwhite
+118 - lrobinson
+119 - CJohnston
+120 - Donna Moore
+121 - Lynn Preston
+122 - Shamim Hussain
+123 - Carmela Manta
+124 - hburke
+125 - onedrive
+126 - Stephanie Dodd
+127 - Julie Booth
+128 - Tony Suart
+129 - Zoe Johnston
+130 - JFellows
+131 - Support at Home East
+132 - Maureen Perry
+133 - Rebecca Jones
+134 - Mel Gallagher
+135 - Richard Ford
+136 - Support at Home North Lancaster
+137 - JBeckett
+138 - apatel
+139 - Elizabeth OBrien
+140 - Shahid Salim
+141 - Susan Ashton
+142 - Sue MacIntyre
+143 - Sara Bilal
+144 - Bethany Helmn
+145 - Ava Csesznyak
+146 - Mark Blanchard
+147 - Andrea Nicholson
+148 - Ann Heap
+149 - Nazish Mehrin
+150 - James Prescott
+151 - DLSadmin
+152 - support
+153 - LFoxcroft
+154 - Carol Grant-Pearce
+155 - Carole Blakeston
+156 - tbaker
+157 - LeahSmith
+158 - janderson
+159 - cnash
+160 - Amanda Ruffell
+161 - pwinnard
+162 - lrix
+163 - SHolt-Milsom
+164 - JGonda
+165 - JCollins
+166 - EHelm
+167 - hpaget
+168 - dings
+169 - Jhayhurst
+170 - HAS Admin Team
+171 - communications.campaigns
+172 - diward
+173 - MHall
+174 - amerrill
+175 - RSellers
+176 - KEmery
+177 - Chorley
+178 - Tanya Grisdale
+179 - AHanif
+180 - Christine Entwistle
+181 - Sean Sullivan
+182 - Susan Gray
+183 - Leigh Humpage
+184 - dmcgarth
+185 - ASpencer
+186 - sconnelly
+187 - Dgriffiths
+188 - Julie Curtis
+189 - HAS Central Referrals
+190 - LFT
+191 - Paula McDonald
+192 - Julie Fry
+193 - LancasterFurniture
+194 - HASCentral WL
+195 - LFoster
+196 - Uzma Raziq
+197 - Susan Clarke
+198 - Jessica Mansfield
+199 - Julie Florentine
+200 - Virginia Kennard
+201 - Sharon Watson
+202 - Shelley Stewart
+203 - Recruitment
+204 - Elizabeth Evans
+205 - Nighat Ahmed
+206 - vsanderson
+207 - Christine Hodkinson
+208 - Clare Barlow
+209 - Deborah Waring
+210 - SScholes
+211 - advice
+212 - mwhewell
+213 - Amanda Donaghy
+214 - SPorter
+215 - SBarton
+216 - Rosina Stevens
+217 - Ian Wright
+218 - telliot
+219 - Victoria Buyer
+220 - James Boyd
+221 - Nayar Sultana
+222 - KnowBe4
+223 - Deborah Fofana
+224 - dshah
+225 - Janice Peters
+226 - Joan Davies
+227 - Susan Walsh
+228 - Natalie Hull
+229 - Susan Donnolly
+230 - Mandy Duerden
+231 - Karen Banister
+232 - Susan Morris
+233 - Alyson Walker
+234 - kentwistle
+235 - JSmith
+236 - smiah
+237 - Rebekah Laurie
+238 - Simon Denerley
+239 - Dementia Hub
+240 - csaum
+241 - Alison Jordan
+242 - Janie Savage
+243 - Melissa Tait
+244 - RStevenson
+245 - DJones
+246 - EMann
+247 - Elayne Woolley
+248 - Tracey Berkley
+249 - Copier E-Mail
+250 - ABhamji
+251 - Age UK Lancashire - Software Licensing
+252 - Jennifer Wall
+253 - Alison Stoneman
+254 - Karen Riley
+255 - Julie McDonald
+256 - Maxine Hilton
+257 - Nick Higham
+258 - Kirsty Imrie
+259 - Michelle Turner
+260 - Maureen Smith
+261 - people
+262 - Lindsey Glover
+263 - AmandaRogers
+264 - Monica Woodroffe
+265 - Anita Imeson
+266 - Abigail Ellis
+267 - Lindsey Malcolm
+268 - Alison Stirzaker
+269 - Jill Dixon
+270 - Suzanne Bailey
+271 - Anita Platt
+272 - Ann Bradshaw
+273 - Sheena Parkinson
+274 - Janice Millington
+275 - Simon Ashby
+276 - JEccles
+277 - Robert Hulme
+278 - Sharon Halsall
+279 - COconnor
+280 - Janine Dawson
+281 - jwood
+282 - VCawtherley
+283 - Management System
+284 - Catherine Peeling
+285 - Rebecca Rawlinson
+286 - ID Badge Requests
+287 - zmoseley
+288 - Deborah Passam
+289 - supportathome
+290 - Miriam Gaskin
+291 - David Cupit
+292 - Ormskirk Office Calendar
+293 - Info
+294 - dcunliffe
+295 - KGreen
+296 - hslater
+297 - Sharon.Clarke
+298 - Dthiem
+299 - mannesley
+300 - myallanki
+301 - ASzmurlon
+302 - Sam Burgess
+303 - aerrington
+304 - SMontgomerie
+305 - astokes
+306 - LThoburn
+307 - Nicola Hunt
+308 - mashworth
+309 - lythamshop
+310 - NAbbott-Hull
+311 - Liz Matthew
+312 - edayssupport
+313 - Kirstie Luxton
+314 - Wendy Leyland
+315 - Lorraine Shoesmith
+316 - Chorley Lifestyle Centre
+317 - Navigator
+318 - flow
+319 - Marion Herbert
+320 - Sara Talbot
+321 - LMakin
+322 - Kath Mason
+323 - MHillier
+324 - KStepaniuk
+325 - Sari Curzon
+326 - 365admin
+327 - Dawn Gash
+328 - DGraham
+329 - RHarrod
+330 - AWharton
+331 - Age UK Lancashire - Accident and Incident
+332 - Julie Sutcliffe
+333 - Lancaster Meeting Room
+334 - mlockett
+335 - Rebecca Louise Evans
+336 - LPennington
+337 - EKavanagh
+338 - JForsyth
+339 - RGeirnaert
+340 - CBromley
+341 - jrawsthorne
+342 - angelaellis
+343 - Emma Frain
+344 - DJackson
+345 - Barbara Flaherty
+346 - Vivien Lathall
+347 - Allyson Fothergill
+348 - HAS North
+349 - Good Day Calls - Referrals
+350 - Carolyn Stirling
+351 - Janet Croll
+352 - Katrina Beaupre
+353 - Danielle Williams
+354 - Jeannette Murphy
+355 - Lynn Barclay
+356 - Wellbeing Centre Calendar
+357 - Helena Collins
+358 - David Flood
+359 - Kathleen Mason
+360 - Amanda Swallow
+361 - Wendy Pearce
+362 - Jessica Mounsey
+363 - Melanie Hughes
+364 - Sarah Cordingley
+365 - Sean Brannigan
+366 - Sarah Connolly
+367 - Jessica Bolger
+368 - Kathryn Morgan
+369 - Michelle Darry
+370 - Polly Soole
+371 - Jill Hawkins
+372 - SVesty
+373 - Andrea Simpson
+374 - CLittle
+375 - Cheryl Speak
+376 - Alan Woodhouse
+377 - Payroll
+378 - David Ward
+379 - kpickles
+380 - Clare Freeman
+381 - HAS North - BVH
+382 - Paul Faulkner
+383 - Stephanie Schofield
+384 - Graeme Neale
+385 - Donna Studholme
+386 - ahale
+387 - PayPal
+388 - Sue Ferm
+389 - Jean Colwell
+390 - ALeeming
+391 - DRobertson
+392 - LFletcher
+393 - cdean
+394 - RBatta
+395 - frontiertest
+396 - VBarry
+397 - PCIAdmin
+398 - KerryAnn
+399 - Shopping Receipts
+400 - Alycia Kelshaw
+401 - Suzanne Walton
+402 - CBlink-Twisse
+403 - Susan Khambay
+404 - Dawn Cannell
+405 - Gary Heron
+406 - Catherine Wilkinson
+407 - Steven McGarry
+408 - Helen Triviais
+409 - Andrea Dixon
+410 - volunteers
+411 - Kirsty Smith
+412 - GMattack
+413 - FWalsh
+414 - Preston Insurance Office
+415 - BGreenhalgh
+416 - JWalmsley
+417 - Angela Grimes
+418 - DGillespie
+419 - RCooklynn
+420 - Carole Mills
+421 - Joanna Berry
+422 - hdean
+423 - Justine Dawson
+424 - HASCentralPR
+425 - PWhittle
+426 - Beverley Hacking
+427 - Barbara Budgen
+428 - Julie Pih
+429 - crichmond
+430 - Evelyn Brookes
+431 - Tosh2500
+432 - dturner
+433 - Maureen Hodgson
+434 - Kathryn Carter
+435 - jacdavies
+436 - Taslim Hussain
+437 - ELloyd
+438 - Eva Boothman
+439 - Tracey Stewart
+440 - The Dementia Hub
+441 - Deborah Kirkup
+442 - Anne Oliver
+443 - Julie McGowan
+444 - jhatch
+445 - sbunting
+446 - Julie Unsworth
+447 - AUKL Facilities
+448 - David Duckworth
+449 - PA
+450 - Jon Lenney
+451 - Sonia Allen
+452 - CoronaVirus Enquiries
+453 - MGregory
+454 - Alison Ramsay
+455 - Angela Bardon
+456 - JulieParker
+457 - Angela Kilburn
+458 - Nicola Ford
+459 - Tracy Barclay-Smith
+460 - serviceadmin
+461 - Sharon Wadsley
+462 - ladetoro
+463 - Monica Gailey
+464 - Christine Mottley
+465 - Diane MacDonald
+466 - Debbie Alison
+467 - Fiona Martin
+468 - Wendy Hodge
+469 - aqados
+470 - Stephanie Partington
+471 - Helen Devine
+472 - SPicking
+473 - Vicky Webster
+474 - Nicola Ainsworth
+475 - Caroline Harley
+476 - PWhitcombe
+477 - nmorgan
+478 - Janet Browse
+479 - shollingworth
+480 - Removing Barriers Referalls
+481 - JulieSmith
+482 - Louise Masterson
+483 - HAS Pennine
+484 - Janet Ross
+485 - Zoe Fleming
+486 - Stephanie Tufft
+487 - Katharine Drinkwater
+488 - Yvonne Roberts
+489 - Pfisher
+490 - Nick Hindley
+491 - Grace Hartley
+492 - Ann Rogers
+493 - Anita Forshaw
+494 - Sue Bailey
+495 - CHilton
+496 - Susan Watt
+497 - Louise Reynolds
+498 - Gillian Ashton
+499 - Julie Darlington
+500 - Volunteer Recruitment
+501 - Julie Edmonds
+502 - Karen Trayner
+503 - Expenses
+504 - Purchasing
+505 - Deborah Prince
+506 - Duncan Kitching
+507 - Janet Murphy
+508 - Bev Harrison
+509 - mcrombleholme
+510 - Laura Hilton
+511 - Your Future
+512 - Margaret Coward
+513 - Kathleen Gaskin
+514 - Hvaughan
+515 - GCalvert
+516 - SSimpson
+517 - Susan Black
+518 - lchapman
+
+You selected HAS North - BVH
+Selection Menu
+1. Select User
+ (
+HAS North - BVH
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User HAS North - BVH
+1 - HAS North - BVH\Calendar
+2 - HAS North - BVH\Calendar Logging
+
+You selected HAS North - BVH\Calendar
+This is interpreted as HAS North - BVH:\Calendar
+Selection Menu
+1. Select User
+ (
+HAS North - BVH
+)
+2. Select Calendar
+ (
+HAS North - BVH:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+
+
+
+User                AccessRights
+----                ------------
+Default             {AvailabilityOnly}
+Anonymous           {None}
+Yvonne Ward         {PublishingEditor}
+Michelle Turner     {Owner}
+Tracy Barclay-Smith {Editor}
+Stacey Houston      {PublishingEditor}
+Gina Wright         {Owner}
+Joanne Rawlinson    {Owner}
+Alan Woodhouse      {PublishingEditor}
+Eva Boothman        {Reviewer}
+Nicola Williams     {Reviewer}
+Patricia Clarke     {PublishingEditor}
+Tina Cooper         {PublishingEditor}
+Alycia Kelshaw      {PublishingEditor}
+Amanda Donaghy      {PublishingEditor}
+David Flood         {PublishingEditor}
+Lindsey Glover      {PublishingEditor}
+Lynne Allan         {PublishingEditor}
+Yvonne Roberts      {PublishingEditor}
+Wendy Leyland       {PublishingEditor}
+Helen Devine        {PublishingEditor}
+Donna Moore         {PublishingEditor}
+Melanie Hughes      {PublishingEditor}
+Ella Hill           {PublishingEditor}
+Amy-Jane Leeming    {PublishingEditor}
+Christine Gerrard   {PublishingEditor}
+Claire Chantrell    {Reviewer}
+Tony Baxter         {Editor}
+
+
+
+Selection Menu
+1. Select User
+ (
+HAS North - BVH
+)
+2. Select Calendar
+ (
+HAS North - BVH:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 518 Users
+1 - Susan Derbyshire
+2 - Diana Tyrer
+3 - fundraising
+4 - Mark Jones
+5 - Julie Forman
+6 - Colin Taylor
+7 - eberners-lee
+8 - Sophie Bradford
+9 - Support at Home Central PR, CH, SRibble
+10 - David Ashton (Volunteer)
+11 - Joanne Rawlinson
+12 - Rob Ledger
+13 - Nicola Williams
+14 - ZGiltrow
+15 - Laura Murray
+16 - Stuart Collins
+17 - aquraishi-rewaj
+18 - DGill
+19 - Peter Holton
+20 - Anne Burt
+21 - Michelle Neale
+22 - RHarrison
+23 - Ruth Cassidy
+24 - DMinion
+25 - Tania Curley
+26 - Karen Morris
+27 - Lindsay Reid
+28 - Janet Hurst
+29 - bhobson
+30 - Support at Home Central WL’s
+31 - Laura Roberts
+32 - Sharon Campbell
+33 - CHughes
+34 - Stacey Harris
+35 - Bridget Coldwell
+36 - Christine Drake
+37 - Elaine Zirins
+38 - Ruby Taib
+39 - Rebecca Lea
+40 - Admin Expenses
+41 - Sophie Royles
+42 - CHerbert
+43 - Alison Thornton
+44 - CChantrell
+45 - Yvonne Ward
+46 - smuruganantham
+47 - Support at Home North F&W
+48 - Lynn Hope
+49 - JMason
+50 - Gary Gilboy
+51 - Steven Kearsley
+52 - Chorley Lifestyle Centre Calendar
+53 - Yvette Powell
+54 - Susan Wright.old
+55 - HAS Pennine - RBH
+56 - Teresa Spear
+57 - face.book
+58 - Fiona Sims
+59 - Knight Hill House Offices Calendar
+60 - Danielle Campbell
+61 - Rozeena Khan
+62 - KMassey
+63 - Christine Gerrard
+64 - RHutchinson
+65 - Gina Wright
+66 - Lynne Allan
+67 - Patricia Clarke
+68 - Lesley Bowden
+69 - Tina Lewis
+70 - Tony Baxter
+71 - Dorothy Stableford
+72 - CDonelan
+73 - Teri Stephenson
+74 - jschild
+75 - Allan Smith
+76 - Shaheena Ali
+77 - Lynda Burke
+78 - Steven Wise
+79 - Fiona Westwell
+80 - Janice Clarke
+81 - HFerguson
+82 - Fiona Robinson
+83 - Pam French
+84 - Jeanette Hale
+85 - JJones
+86 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+87 - Leanne Macdonald
+88 - RPennington
+89 - LHaworth
+90 - KBrooks
+91 - Heather Owen
+92 - Les Caton
+93 - Jean-Bruno Villette
+94 - Scanner
+95 - Julie Christian
+96 - Janet Procter
+97 - Alison Read
+98 - HAS Pennine - BGH
+99 - Edwin Neil
+100 - gali
+101 - sgriffiths
+102 - kpeters
+103 - Kate Brown
+104 - LHyatt
+105 - dspencer
+106 - Home Help Services
+107 - HAS North - RLI
+108 - Olivia Rath
+109 - nshah
+110 - Natasha Mellor
+111 - RWigmore
+112 - Nina Hatfield
+113 - Ella Hill
+114 - Southport Insurance Office
+115 - arawcliffe
+116 - Payments
+117 - cwhite
+118 - lrobinson
+119 - CJohnston
+120 - Donna Moore
+121 - Lynn Preston
+122 - Shamim Hussain
+123 - Carmela Manta
+124 - hburke
+125 - onedrive
+126 - Stephanie Dodd
+127 - Julie Booth
+128 - Tony Suart
+129 - Zoe Johnston
+130 - JFellows
+131 - Support at Home East
+132 - Maureen Perry
+133 - Rebecca Jones
+134 - Mel Gallagher
+135 - Richard Ford
+136 - Support at Home North Lancaster
+137 - JBeckett
+138 - apatel
+139 - Elizabeth OBrien
+140 - Shahid Salim
+141 - Susan Ashton
+142 - Sue MacIntyre
+143 - Sara Bilal
+144 - Bethany Helmn
+145 - Ava Csesznyak
+146 - Mark Blanchard
+147 - Andrea Nicholson
+148 - Ann Heap
+149 - Nazish Mehrin
+150 - James Prescott
+151 - DLSadmin
+152 - support
+153 - LFoxcroft
+154 - Carol Grant-Pearce
+155 - Carole Blakeston
+156 - tbaker
+157 - LeahSmith
+158 - janderson
+159 - cnash
+160 - Amanda Ruffell
+161 - pwinnard
+162 - lrix
+163 - SHolt-Milsom
+164 - JGonda
+165 - JCollins
+166 - EHelm
+167 - hpaget
+168 - dings
+169 - Jhayhurst
+170 - HAS Admin Team
+171 - communications.campaigns
+172 - diward
+173 - MHall
+174 - amerrill
+175 - RSellers
+176 - KEmery
+177 - Chorley
+178 - Tanya Grisdale
+179 - AHanif
+180 - Christine Entwistle
+181 - Sean Sullivan
+182 - Susan Gray
+183 - Leigh Humpage
+184 - dmcgarth
+185 - ASpencer
+186 - sconnelly
+187 - Dgriffiths
+188 - Julie Curtis
+189 - HAS Central Referrals
+190 - LFT
+191 - Paula McDonald
+192 - Julie Fry
+193 - LancasterFurniture
+194 - HASCentral WL
+195 - LFoster
+196 - Uzma Raziq
+197 - Susan Clarke
+198 - Jessica Mansfield
+199 - Julie Florentine
+200 - Virginia Kennard
+201 - Sharon Watson
+202 - Shelley Stewart
+203 - Recruitment
+204 - Elizabeth Evans
+205 - Nighat Ahmed
+206 - vsanderson
+207 - Christine Hodkinson
+208 - Clare Barlow
+209 - Deborah Waring
+210 - SScholes
+211 - advice
+212 - mwhewell
+213 - Amanda Donaghy
+214 - SPorter
+215 - SBarton
+216 - Rosina Stevens
+217 - Ian Wright
+218 - telliot
+219 - Victoria Buyer
+220 - James Boyd
+221 - Nayar Sultana
+222 - KnowBe4
+223 - Deborah Fofana
+224 - dshah
+225 - Janice Peters
+226 - Joan Davies
+227 - Susan Walsh
+228 - Natalie Hull
+229 - Susan Donnolly
+230 - Mandy Duerden
+231 - Karen Banister
+232 - Susan Morris
+233 - Alyson Walker
+234 - kentwistle
+235 - JSmith
+236 - smiah
+237 - Rebekah Laurie
+238 - Simon Denerley
+239 - Dementia Hub
+240 - csaum
+241 - Alison Jordan
+242 - Janie Savage
+243 - Melissa Tait
+244 - RStevenson
+245 - DJones
+246 - EMann
+247 - Elayne Woolley
+248 - Tracey Berkley
+249 - Copier E-Mail
+250 - ABhamji
+251 - Age UK Lancashire - Software Licensing
+252 - Jennifer Wall
+253 - Alison Stoneman
+254 - Karen Riley
+255 - Julie McDonald
+256 - Maxine Hilton
+257 - Nick Higham
+258 - Kirsty Imrie
+259 - Michelle Turner
+260 - Maureen Smith
+261 - people
+262 - Lindsey Glover
+263 - AmandaRogers
+264 - Monica Woodroffe
+265 - Anita Imeson
+266 - Abigail Ellis
+267 - Lindsey Malcolm
+268 - Alison Stirzaker
+269 - Jill Dixon
+270 - Suzanne Bailey
+271 - Anita Platt
+272 - Ann Bradshaw
+273 - Sheena Parkinson
+274 - Janice Millington
+275 - Simon Ashby
+276 - JEccles
+277 - Robert Hulme
+278 - Sharon Halsall
+279 - COconnor
+280 - Janine Dawson
+281 - jwood
+282 - VCawtherley
+283 - Management System
+284 - Catherine Peeling
+285 - Rebecca Rawlinson
+286 - ID Badge Requests
+287 - zmoseley
+288 - Deborah Passam
+289 - supportathome
+290 - Miriam Gaskin
+291 - David Cupit
+292 - Ormskirk Office Calendar
+293 - Info
+294 - dcunliffe
+295 - KGreen
+296 - hslater
+297 - Sharon.Clarke
+298 - Dthiem
+299 - mannesley
+300 - myallanki
+301 - ASzmurlon
+302 - Sam Burgess
+303 - aerrington
+304 - SMontgomerie
+305 - astokes
+306 - LThoburn
+307 - Nicola Hunt
+308 - mashworth
+309 - lythamshop
+310 - NAbbott-Hull
+311 - Liz Matthew
+312 - edayssupport
+313 - Kirstie Luxton
+314 - Wendy Leyland
+315 - Lorraine Shoesmith
+316 - Chorley Lifestyle Centre
+317 - Navigator
+318 - flow
+319 - Marion Herbert
+320 - Sara Talbot
+321 - LMakin
+322 - Kath Mason
+323 - MHillier
+324 - KStepaniuk
+325 - Sari Curzon
+326 - 365admin
+327 - Dawn Gash
+328 - DGraham
+329 - RHarrod
+330 - AWharton
+331 - Age UK Lancashire - Accident and Incident
+332 - Julie Sutcliffe
+333 - Lancaster Meeting Room
+334 - mlockett
+335 - Rebecca Louise Evans
+336 - LPennington
+337 - EKavanagh
+338 - JForsyth
+339 - RGeirnaert
+340 - CBromley
+341 - jrawsthorne
+342 - angelaellis
+343 - Emma Frain
+344 - DJackson
+345 - Barbara Flaherty
+346 - Vivien Lathall
+347 - Allyson Fothergill
+348 - HAS North
+349 - Good Day Calls - Referrals
+350 - Carolyn Stirling
+351 - Janet Croll
+352 - Katrina Beaupre
+353 - Danielle Williams
+354 - Jeannette Murphy
+355 - Lynn Barclay
+356 - Wellbeing Centre Calendar
+357 - Helena Collins
+358 - David Flood
+359 - Kathleen Mason
+360 - Amanda Swallow
+361 - Wendy Pearce
+362 - Jessica Mounsey
+363 - Melanie Hughes
+364 - Sarah Cordingley
+365 - Sean Brannigan
+366 - Sarah Connolly
+367 - Jessica Bolger
+368 - Kathryn Morgan
+369 - Michelle Darry
+370 - Polly Soole
+371 - Jill Hawkins
+372 - SVesty
+373 - Andrea Simpson
+374 - CLittle
+375 - Cheryl Speak
+376 - Alan Woodhouse
+377 - Payroll
+378 - David Ward
+379 - kpickles
+380 - Clare Freeman
+381 - HAS North - BVH
+382 - Paul Faulkner
+383 - Stephanie Schofield
+384 - Graeme Neale
+385 - Donna Studholme
+386 - ahale
+387 - PayPal
+388 - Sue Ferm
+389 - Jean Colwell
+390 - ALeeming
+391 - DRobertson
+392 - LFletcher
+393 - cdean
+394 - RBatta
+395 - frontiertest
+396 - VBarry
+397 - PCIAdmin
+398 - KerryAnn
+399 - Shopping Receipts
+400 - Alycia Kelshaw
+401 - Suzanne Walton
+402 - CBlink-Twisse
+403 - Susan Khambay
+404 - Dawn Cannell
+405 - Gary Heron
+406 - Catherine Wilkinson
+407 - Steven McGarry
+408 - Helen Triviais
+409 - Andrea Dixon
+410 - volunteers
+411 - Kirsty Smith
+412 - GMattack
+413 - FWalsh
+414 - Preston Insurance Office
+415 - BGreenhalgh
+416 - JWalmsley
+417 - Angela Grimes
+418 - DGillespie
+419 - RCooklynn
+420 - Carole Mills
+421 - Joanna Berry
+422 - hdean
+423 - Justine Dawson
+424 - HASCentralPR
+425 - PWhittle
+426 - Beverley Hacking
+427 - Barbara Budgen
+428 - Julie Pih
+429 - crichmond
+430 - Evelyn Brookes
+431 - Tosh2500
+432 - dturner
+433 - Maureen Hodgson
+434 - Kathryn Carter
+435 - jacdavies
+436 - Taslim Hussain
+437 - ELloyd
+438 - Eva Boothman
+439 - Tracey Stewart
+440 - The Dementia Hub
+441 - Deborah Kirkup
+442 - Anne Oliver
+443 - Julie McGowan
+444 - jhatch
+445 - sbunting
+446 - Julie Unsworth
+447 - AUKL Facilities
+448 - David Duckworth
+449 - PA
+450 - Jon Lenney
+451 - Sonia Allen
+452 - CoronaVirus Enquiries
+453 - MGregory
+454 - Alison Ramsay
+455 - Angela Bardon
+456 - JulieParker
+457 - Angela Kilburn
+458 - Nicola Ford
+459 - Tracy Barclay-Smith
+460 - serviceadmin
+461 - Sharon Wadsley
+462 - ladetoro
+463 - Monica Gailey
+464 - Christine Mottley
+465 - Diane MacDonald
+466 - Debbie Alison
+467 - Fiona Martin
+468 - Wendy Hodge
+469 - aqados
+470 - Stephanie Partington
+471 - Helen Devine
+472 - SPicking
+473 - Vicky Webster
+474 - Nicola Ainsworth
+475 - Caroline Harley
+476 - PWhitcombe
+477 - nmorgan
+478 - Janet Browse
+479 - shollingworth
+480 - Removing Barriers Referalls
+481 - JulieSmith
+482 - Louise Masterson
+483 - HAS Pennine
+484 - Janet Ross
+485 - Zoe Fleming
+486 - Stephanie Tufft
+487 - Katharine Drinkwater
+488 - Yvonne Roberts
+489 - Pfisher
+490 - Nick Hindley
+491 - Grace Hartley
+492 - Ann Rogers
+493 - Anita Forshaw
+494 - Sue Bailey
+495 - CHilton
+496 - Susan Watt
+497 - Louise Reynolds
+498 - Gillian Ashton
+499 - Julie Darlington
+500 - Volunteer Recruitment
+501 - Julie Edmonds
+502 - Karen Trayner
+503 - Expenses
+504 - Purchasing
+505 - Deborah Prince
+506 - Duncan Kitching
+507 - Janet Murphy
+508 - Bev Harrison
+509 - mcrombleholme
+510 - Laura Hilton
+511 - Your Future
+512 - Margaret Coward
+513 - Kathleen Gaskin
+514 - Hvaughan
+515 - GCalvert
+516 - SSimpson
+517 - Susan Black
+518 - lchapman
+
+You selected Louise Reynolds
+
+Selection Menu
+1. Select User
+ (
+HAS North - BVH
+)
+2. Select Calendar
+ (
+HAS North - BVH:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Louise Reynolds
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor

@@ -1,0 +1,328 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220222112118
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 283908
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-22-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 77 Users
+1 - Accounts BPF
+2 - Accounts
+3 - adminuser
+4 - agreen
+5 - aquinn
+6 - awatterson
+7 - BPF membership
+8 - president
+9 - BPF Update
+10 - ChiefExecutive
+11 - Concep.Service
+12 - dmelhuish
+13 - David Melhuish
+14 - David Partridge
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Drew.McNeil
+17 - Events | BPF
+18 - Events
+19 - external.auditors
+20 - CommercialPropertyCampaign
+21 - fallen
+22 - Francine.reddaway
+23 - Futures
+24 - ghume
+25 - Gail Hume
+26 - gworrall
+27 - ghalpenny
+28 - hpayne
+29 - hboyd
+30 - HWhite
+31 - ifletcher
+32 - IonFletcher
+33 - Isabel.Buliani
+34 - jsimondson
+35 - jhollinshead
+36 - Jeremy.Gray
+37 - klambert
+38 - kwade-potter
+39 - Kristina.Grinkina
+40 - lraeburn-smith
+41 - mcatterall
+42 - mkool
+43 - mleech
+44 - MelanieLeech
+45 - mkillington
+46 - mraymond
+47 - mhorn
+48 - nicholas.dyson
+49 - david.sleath
+50 - Jack.Baker-Merry
+51 - britishpropertyfed
+52 - Prabhjeet.rai
+53 - rkelly
+54 - rharvey
+55 - Regions
+56 - RWall
+57 - Robin.Blacklock
+58 - ruckshinder.atwal
+59 - SBensted
+60 - ssule
+61 - ssobhani
+62 - sgreer
+63 - SFrancis
+64 - sarah.lumb
+65 - Sarah.Spencer
+66 - Scanner
+67 - snathan
+68 - SPF Comms
+69 - SPF Events
+70 - squires
+71 - St Albans Suite
+72 - skasongo
+73 - spollitt
+74 - tlangford
+75 - togwezi
+76 - vivienne.king
+77 - zjghalef
+
+You selected lraeburn-smith
+Selection Menu
+1. Select User
+ (
+lraeburn-smith
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User lraeburn-smith
+1 - lraeburn-smith\Calendar
+2 - lraeburn-smith\Calendar Logging
+
+You selected lraeburn-smith\Calendar
+This is interpreted as lraeburn-smith:\Calendar
+Selection Menu
+1. Select User
+ (
+lraeburn-smith
+)
+2. Select Calendar
+ (
+lraeburn-smith:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 77 Users
+1 - Accounts BPF
+2 - Accounts
+3 - adminuser
+4 - agreen
+5 - aquinn
+6 - awatterson
+7 - BPF membership
+8 - president
+9 - BPF Update
+10 - ChiefExecutive
+11 - Concep.Service
+12 - dmelhuish
+13 - David Melhuish
+14 - David Partridge
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Drew.McNeil
+17 - Events | BPF
+18 - Events
+19 - external.auditors
+20 - CommercialPropertyCampaign
+21 - fallen
+22 - Francine.reddaway
+23 - Futures
+24 - ghume
+25 - Gail Hume
+26 - gworrall
+27 - ghalpenny
+28 - hpayne
+29 - hboyd
+30 - HWhite
+31 - ifletcher
+32 - IonFletcher
+33 - Isabel.Buliani
+34 - jsimondson
+35 - jhollinshead
+36 - Jeremy.Gray
+37 - klambert
+38 - kwade-potter
+39 - Kristina.Grinkina
+40 - lraeburn-smith
+41 - mcatterall
+42 - mkool
+43 - mleech
+44 - MelanieLeech
+45 - mkillington
+46 - mraymond
+47 - mhorn
+48 - nicholas.dyson
+49 - david.sleath
+50 - Jack.Baker-Merry
+51 - britishpropertyfed
+52 - Prabhjeet.rai
+53 - rkelly
+54 - rharvey
+55 - Regions
+56 - RWall
+57 - Robin.Blacklock
+58 - ruckshinder.atwal
+59 - SBensted
+60 - ssule
+61 - ssobhani
+62 - sgreer
+63 - SFrancis
+64 - sarah.lumb
+65 - Sarah.Spencer
+66 - Scanner
+67 - snathan
+68 - SPF Comms
+69 - SPF Events
+70 - squires
+71 - St Albans Suite
+72 - skasongo
+73 - spollitt
+74 - tlangford
+75 - togwezi
+76 - vivienne.king
+77 - zjghalef
+
+You selected IonFletcher
+
+Selection Menu
+1. Select User
+ (
+lraeburn-smith
+)
+2. Select Calendar
+ (
+lraeburn-smith:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+IonFletcher
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  lraeburn-smith:\Calendar With the following settings:
+User to add: IonFletcher
+Permissions: Editor
+Adding the Permission...
+
+RunspaceId             : 3e000ded-4848-4940-a19c-c19db37b2c2f
+Identity               : lraeburn-smith:\Calendar
+FolderName             : Calendar
+User                   : Ion Fletcher
+AccessRights           : {Editor}
+SharingPermissionFlags :
+IsValid                : True
+ObjectState            : New
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+lraeburn-smith
+)
+2. Select Calendar
+ (
+lraeburn-smith:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+IonFletcher
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit

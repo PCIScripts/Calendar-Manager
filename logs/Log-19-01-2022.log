@@ -1,0 +1,265 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220119154416
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 22044
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-19-01-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 25 Users
+1 - adele.beacham
+2 - admin
+3 - Administrator-
+4 - AllStaffCalendar
+5 - Arjen
+6 - Christopher.angell
+7 - dave.wood
+8 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+9 - hannes.novak
+10 - info
+11 - its
+12 - jake.anderson
+13 - donna.kelly
+14 - jonathan.bones
+15 - Martin.Locke
+16 - megan.barnes
+17 - migration
+18 - George.Kenneston
+19 - Richard.Griffiths
+20 - Sales Europe
+21 - sales_fd0d50c9c6
+22 - stewart.milne
+23 - uwe.drees
+24 - charlotte.hunt
+25 - william
+
+You selected AllStaffCalendar
+Selection Menu
+1. Select User
+ (
+AllStaffCalendar
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User AllStaffCalendar
+1 - AllStaffCalendar\Calendar
+2 - AllStaffCalendar\Calendar Logging
+
+You selected AllStaffCalendar\Calendar
+This is interpreted as AllStaffCalendar:\Calendar
+Selection Menu
+1. Select User
+ (
+AllStaffCalendar
+)
+2. Select Calendar
+ (
+AllStaffCalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 25 Users
+1 - adele.beacham
+2 - admin
+3 - Administrator-
+4 - AllStaffCalendar
+5 - Arjen
+6 - Christopher.angell
+7 - dave.wood
+8 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+9 - hannes.novak
+10 - info
+11 - its
+12 - jake.anderson
+13 - donna.kelly
+14 - jonathan.bones
+15 - Martin.Locke
+16 - megan.barnes
+17 - migration
+18 - George.Kenneston
+19 - Richard.Griffiths
+20 - Sales Europe
+21 - sales_fd0d50c9c6
+22 - stewart.milne
+23 - uwe.drees
+24 - charlotte.hunt
+25 - william
+
+You selected Richard.Griffiths
+
+Selection Menu
+1. Select User
+ (
+AllStaffCalendar
+)
+2. Select Calendar
+ (
+AllStaffCalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Richard.Griffiths
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+
+
+
+User          AccessRights
+----          ------------
+Default       {AvailabilityOnly}
+Anonymous     {None}
+Warehouse     {Editor}
+Jake Anderson {Editor}
+Stewart Milne {Editor}
+Dave Wood     {Reviewer}
+
+
+
+Selection Menu
+1. Select User
+ (
+AllStaffCalendar
+)
+2. Select Calendar
+ (
+AllStaffCalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Richard.Griffiths
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  AllStaffCalendar:\Calendar With the following settings:
+User to add: Richard.Griffiths
+Permissions: Reviewer
+Adding the Permission...
+
+Permissions have been set!
+FolderName User              AccessRights SharingPermissionFlags
+---------- ----              ------------ ----------------------
+Calendar   Richard Griffiths {Reviewer}
+
+Selection Menu
+1. Select User
+ (
+AllStaffCalendar
+)
+2. Select Calendar
+ (
+AllStaffCalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Richard.Griffiths
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor

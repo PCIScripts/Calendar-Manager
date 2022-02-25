@@ -1,0 +1,1591 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220124160548
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 26116
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-24-01-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected swcalendar
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 3 Calendars for User swcalendar
+1 - swcalendar\Calendar
+2 - swcalendar\IPM_SUBTREE\Shared Calendars
+3 - swcalendar\Calendar Logging
+
+You selected swcalendar\Calendar
+This is interpreted as swcalendar:\Calendar
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+
+
+
+User               AccessRights
+----               ------------
+Default            {AvailabilityOnly}
+Anonymous          {None}
+Rachael Williams   {Reviewer}
+Martin Constantine {Editor}
+Lucy Perman        {Editor}
+Evangeline Fordham {Editor}
+Emma Doherty       {Editor}
+Melanie Wilson     {Editor}
+Rosie Oldham       {Editor}
+Faye Jefferson     {PublishingEditor}
+Ree Collins        {PublishingEditor}
+Gareth Smith       {Editor}
+Clare Taylor       {Editor}
+Hannah Conway      {Editor}
+Katie Bruce        {Editor}
+Victoria Munro     {PublishingEditor}
+Camille De Groote  {PublishingEditor}
+Sue Hurrell        {PublishingEditor}
+Tom Mansfield      {PublishingEditor}
+Rey Trombetta      {PublishingEditor}
+Sarah Triggs       {PublishingEditor}
+Matt Peacock       {Editor}
+Arts Administrator {Editor}
+Fiona McGregor     {PublishingEditor}
+Marigold Hughes    {PublishingEditor}
+Catherine Hulme    {Editor}
+Meg Peterson       {Editor}
+
+
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Rachael.Williams
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Rachael.Williams
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  swcalendar:\Calendar With the following settings:
+User to add: Rachael.Williams
+Permissions: Editor
+Adding the Permission...
+An existing permission entry was found for user: Rachael Williams.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=fdb476df-0289-43a4-82a0-7e512a790c3b,TimeStamp=25/01/2022 
+17:00:49] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 
+377C9C12,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+An existing permission entry was found for user: Rachael Williams.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=fdb476df-0289-43a4-82a0-7e512a790c3b,TimeStamp=25/01/202
+   2 17:00:49] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 377C9C12,Microsoft.Exchange.Manag
+  ement.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Rachael.Williams
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to edit the calendar  swcalendar:\Calendar With the following settings:
+User to edit: Rachael.Williams
+Permissions: Editor
+Editing the calendar...
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Rachael.Williams
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Martin.Constantine
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Martin.Constantine
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  swcalendar:\Calendar With the following settings:
+User to add: Martin.Constantine
+Permissions: Editor
+Adding the Permission...
+An existing permission entry was found for user: Martin Constantine.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=e4796e08-7dfc-48e7-830e-c62d06423bd0,TimeStamp=25/01/2022 
+17:05:22] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 
+46929715,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+An existing permission entry was found for user: Martin Constantine.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=e4796e08-7dfc-48e7-830e-c62d06423bd0,TimeStamp=25/01/202
+   2 17:05:22] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 46929715,Microsoft.Exchange.Manag
+  ement.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Martin.Constantine
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to edit the calendar  swcalendar:\Calendar With the following settings:
+User to edit: Martin.Constantine
+Permissions: Editor
+Editing the calendar...
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Martin.Constantine
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Elizabeth.Johnson
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Elizabeth.Johnson
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  swcalendar:\Calendar With the following settings:
+User to add: Elizabeth.Johnson
+Permissions: Editor
+Adding the Permission...
+
+Permissions have been set!
+FolderName User              AccessRights SharingPermissionFlags
+---------- ----              ------------ ----------------------
+Calendar   Elizabeth Johnson {Editor}
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Elizabeth.Johnson
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Jessica.Bryden
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Jessica.Bryden
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  swcalendar:\Calendar With the following settings:
+User to add: Jessica.Bryden
+Permissions: Editor
+Adding the Permission...
+Calendar   Jessica Bryden    {Editor}
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+swcalendar
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Jessica.Bryden
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Staff Whereabouts
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+swcalendar:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Jessica.Bryden
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Found 2 Calendars for User Staff Whereabouts
+1 - Staff Whereabouts\Calendar
+2 - Staff Whereabouts\Calendar Logging
+
+You selected Staff Whereabouts\Calendar
+This is interpreted as Staff Whereabouts:\Calendar
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Jessica.Bryden
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Rachael.Williams
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Rachael.Williams
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  Staff Whereabouts:\Calendar With the following settings:
+User to add: Rachael.Williams
+Permissions: Editor
+Adding the Permission...
+An existing permission entry was found for user: Rachael Williams.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=5cd1ead5-b7d9-48a5-b943-8bd00abbfc1e,TimeStamp=25/01/2022 
+17:07:35] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 
+377C9C12,Microsoft.Exchange.Management.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+An existing permission entry was found for user: Rachael Williams.
+    + CategoryInfo          : NotSpecified: (:) [Add-MailboxFolderPermission], UserAlreadyExis...nEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=5cd1ead5-b7d9-48a5-b943-8bd00abbfc1e,TimeStamp=25/01/202
+   2 17:07:35] [FailureCategory=Cmdlet-UserAlreadyExistsInPermissionEntryException] 377C9C12,Microsoft.Exchange.Manag
+  ement.StoreTasks.AddMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Rachael.Williams
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to edit the calendar  Staff Whereabouts:\Calendar With the following settings:
+User to edit: Rachael.Williams
+Permissions: Editor
+Editing the calendar...
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Rachael.Williams
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Martin.Constantine
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Martin.Constantine
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to edit the calendar  Staff Whereabouts:\Calendar With the following settings:
+User to edit: Martin.Constantine
+Permissions: Editor
+Editing the calendar...
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Martin.Constantine
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Elizabeth.Johnson
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Elizabeth.Johnson
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to edit the calendar  Staff Whereabouts:\Calendar With the following settings:
+User to edit: Elizabeth.Johnson
+Permissions: Editor
+Editing the calendar...
+There is no existing permission entry found for user: Elizabeth Johnson.
+    + CategoryInfo          : NotSpecified: (:) [Set-MailboxFolderPermission], UserNotFoundInPermissionEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=a409f225-4824-439a-949a-0385a62b27e6,TimeStamp=25/01/2022 
+17:08:29] [FailureCategory=Cmdlet-UserNotFoundInPermissionEntryException] 
+F01F7339,Microsoft.Exchange.Management.StoreTasks.SetMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+There is no existing permission entry found for user: Elizabeth Johnson.
+    + CategoryInfo          : NotSpecified: (:) [Set-MailboxFolderPermission], UserNotFoundInPermissionEntryException
+    + FullyQualifiedErrorId : [Server=DBBPR08MB4538,RequestId=a409f225-4824-439a-949a-0385a62b27e6,TimeStamp=25/01/202
+   2 17:08:29] [FailureCategory=Cmdlet-UserNotFoundInPermissionEntryException] F01F7339,Microsoft.Exchange.Management
+  .StoreTasks.SetMailboxFolderPermission
+    + PSComputerName        : outlook.office365.com
+
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Elizabeth.Johnson
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  Staff Whereabouts:\Calendar With the following settings:
+User to add: Elizabeth.Johnson
+Permissions: Editor
+Adding the Permission...
+Calendar   Elizabeth Johnson {Editor}
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Elizabeth.Johnson
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 64 Users
+1 - Amanda.Fernehough
+2 - faye.jefferson
+3 - becky.leslie
+4 - br
+5 - camille.degroote
+6 - Catherine.Hulme
+7 - cathy.graham
+8 - CBT
+9 - cb
+10 - clare.taylor
+11 - Clarence.Allen
+12 - Confidential
+13 - fundraising
+14 - dp
+15 - DiscoverySearchMailbox{D919BA05-46A6-415f-80AD-7E09334BB852}
+16 - Elizabeth.Johnson
+17 - Ellie.Coakley-Sigl
+18 - eh
+19 - Emma.Doherty
+20 - Evangeline.Fordham
+21 - Event Calendar
+22 - bp
+23 - ff
+24 - fiona.mcgregor
+25 - gareth.smith
+26 - Gillian.RussellBlackburn
+27 - hannah.conway
+28 - Harriet.Pendlebury
+29 - pci
+30 - Intern
+31 - Isabella.Harriss
+32 - jean-marie.fagon
+33 - jenna
+34 - Jessica.Bryden
+35 - kb
+36 - liz.sich
+37 - love
+38 - lm
+39 - Lucy.Perman
+40 - mh
+41 - Martin.Constantine
+42 - meg.peterson
+43 - Melanie.Wilson
+44 - Millie.Maltby
+45 - mp
+46 - Rachael.Williams
+47 - rr
+48 - rc
+49 - rp
+50 - rt
+51 - rb
+52 - robyn.mondesirclarke
+53 - rosie.oldham
+54 - sarah
+55 - Sofa Room
+56 - Staff Whereabouts
+57 - swcalendar
+58 - info
+59 - Streetwise Opera LDN office_0114bbf4ac
+60 - Sue.Hurrell
+61 - sg
+62 - sylvain.malburet
+63 - tv
+64 - Munro
+
+You selected Jessica.Bryden
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Jessica.Bryden
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Permission to apply:
+Quick permissions
+-------------------------
+1. Reviewer
+2. Editor
+-------------------------
+All Permissions
+-------------------------
+3. Publishing Editor
+4. Publishing Author
+5. Author
+6. Nonediting Author
+7. Contributor
+Attempting to add the permission to the calendar  Staff Whereabouts:\Calendar With the following settings:
+User to add: Jessica.Bryden
+Permissions: Editor
+Adding the Permission...
+Calendar   Jessica Bryden    {Editor}
+Permissions have been set!
+
+Selection Menu
+1. Select User
+ (
+Staff Whereabouts
+)
+2. Select Calendar
+ (
+Staff Whereabouts:\Calendar
+)
+3. List Calendar Permissions
+4. Selected User for editing
+ (
+Jessica.Bryden
+)
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission (TESTING)
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+
+
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20220125170939
+**********************

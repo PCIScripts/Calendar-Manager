@@ -1,0 +1,130 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20220216154828
+Username: AzureAD\DanielBemrose
+RunAs User: AzureAD\DanielBemrose
+Configuration Name: 
+Machine: WS156 (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1'
+Process ID: 169116
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET LTD\Documents\GitHub\Calendar-Manager\logs\Log-16-02-2022.log
+
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+1      PowerShell.E...                 NotStarted    False                                Stop-Transcript
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Login to Exchange
+1. Login
+2. Delegate Login
+3. Back to main menu
+Q. Quit
+Calendar Powershell v 2.3.0(DEV)
+Main Menu:
+1. Login To Exchange
+()
+2. Calendar Options
+3. Miscellaneous
+ (
+Coming Soon
+)
+Q. Quit
+Selection Menu
+1. Select User
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Getting all users...
+Found 1 Users
+1 - dbemrose
+
+You selected dbemrose
+Selection Menu
+1. Select User
+ (
+dbemrose
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
+Get-MailboxFolderStatistics : The term 'Get-MailboxFolderStatistics' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the 
+path is correct and try again.
+At C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET 
+LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1:90 char:29
++     $Script:UserCalendars = Get-MailboxFolderStatistics -Identity $Sc ...
++                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-MailboxFolderStatistics:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get-MailboxFolderStatistics : The term 'Get-MailboxFolderStatistics' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET
+LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1:90 char:29
++     $Script:UserCalendars = Get-MailboxFolderStatistics -Identity $Sc ...
++                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-MailboxFolderStatistics:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+Found 0 Calendars for User dbemrose
+
+You cannot call a method on a null-valued expression.
+At C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET 
+LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1:406 char:5
++     $Script:CalendarSelectedR = $Script:CalendarSelected.Insert($Scri ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+You cannot call a method on a null-valued expression.
+At C:\Users\DanielBemrose\OneDrive - PREMIER CHOICE INTERNET
+LTD\Documents\GitHub\Calendar-Manager\Calendar-Script.ps1:406 char:5
++     $Script:CalendarSelectedR = $Script:CalendarSelected.Insert($Scri ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+You selected
+This is interpreted as
+Selection Menu
+1. Select User
+ (
+dbemrose
+)
+2. Select Calendar
+3. List Calendar Permissions
+4. Select User for editing
+5. Edit Permission
+6. Add Permission
+7. Remove Calendar Permission
+8. Back to main menu
+R1. Refresh User Select
+Q. Quit
