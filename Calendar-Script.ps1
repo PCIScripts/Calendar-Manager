@@ -46,7 +46,7 @@ Function Get-Users{
     #Writes to the screen what will be happening next
     Write-host "Getting all users..."
     #Creates a variable that can be used by only the script that will get all the names for the mailboxes in the organization
-    $Script:users = Get-Mailbox | Select -ExpandProperty Name
+    $Script:users = Get-Mailbox | Select -ExpandProperty Identity
     #Creates an empty hashtable that is accessed only by the script and will be used to store the index number and the username. This is used to create a dynamic menu system.
     $Script:UsersTable = @{}
     #Creates a variable that is used to add 1 after each username has been passed.
@@ -60,6 +60,21 @@ Function Get-Users{
     }
     #Writes to the screen how many users it had found based on the unique entries within the users variable
     Write-Host ('Found {0} Users' -f $Script:users.count)
+    Write-Host "Getting all groups..."
+    $script:groups = Get-UnifiedGroup | Select -ExpandProperty DisplayName
+    foreach($script:group in $script:groups){
+        if($Script:users -contains $script:group){
+            $script:group = $script:group + ' Group'
+            $script:UsersTable.add($iteration, $script:group)
+            $iteration = $iteration + 1
+            $Script:users += $script:group
+        }Else{
+        $script:UsersTable.add($iteration, $script:group)
+        $iteration = $iteration + 1
+        $Script:users += $script:group
+        }
+    }
+    Write-Host ('Found {0} Groups' -f $groups.count)
     #Calls the SelectUserMenu function
     SelectUserMenu
 }   Else{
@@ -72,7 +87,7 @@ Function Get-Users{
 Function Get-UserAdjust{
     clear-host
     Write-host "Getting all users..."
-    $Script:usersa = Get-Mailbox | Select -ExpandProperty Name
+    $Script:usersa = Get-Mailbox | Select -ExpandProperty Identity
     $Script:UsersTablea = @{}
     $iterationa = 0
     foreach($Script:Usernamea in $Script:Usersa){
@@ -80,6 +95,21 @@ Function Get-UserAdjust{
         $iterationa = $iterationa + 1
     }
     Write-Host ('Found {0} Users' -f $Script:usersa.count)
+    Write-Host "Getting all groups..."
+    $Script:groupsa = Get-UnifiedGroup | Select -ExpandProperty Identity
+    foreach($Script:groupa in $script:groupsa){
+        if($Script:usersa -contains $script:groupa){
+            $script:groupa = $script:groupa + ' Group'
+            $script:UsersTablea.add($iterationa, $script:groupa)
+            $iterationa = $iterationa + 1
+            $Script:usersa += $script:groupa
+        }Else{
+        $script:UsersTablea.add($iterationa, $script:groupa)
+        $iterationa = $iterationa + 1
+        $Script:usersa += $script:groupa
+        }
+    }
+    Write-Host ('Found {0} Groups' -f $Script:groupa.count)
     SelectUserMenua
 }
 
@@ -87,7 +117,7 @@ Function Get-UserAdjust{
 #then selecting the identity value to get the result for all the calendars. This will then add it to the UsersCalendars hashtable just like in the previous 2 functions
 Function Get-CalendarsUser{
     #Gets the folder statistics for the mailbox for the user selected. Then filters the search for anything containing Calendar Then selects the identity variable
-    $Script:UserCalendars = Get-MailboxFolderStatistics -Identity $Script:UserSelected | Where Name -like "*Calendar*" | Select -ExpandProperty Identity
+    $Script:UserCalendars = Get-MailboxFolderStatistics -Identity $Script:UserSelected | Where Identity -like "*Calendar*" | Where identity -NotLike "*Calendar Logging" | Select -ExpandProperty Identity
     #Creates the userscalendarstable hashtable to be used for storing the calendars for the dynamic menu.
     $Script:UsersCalendarsTable = @{}
     #Creates the iteration variable used for the indexing for the dynamic menu
@@ -252,7 +282,7 @@ Function MainMenu{
     $Script:MMResult = Read-Host "Option"
     #Based on the users output it will go to a specific menu
     Switch($Script:MMResult){
-        1{LoginMenu}
+        1{LoginMFA}
         #Some basic logic to make sure the user has logged into the exchange account and loaded the needed commands. If it is not they will be taken to the login menu instead.
         2{If($Script:Login = $null){LoginMenu}Else{SelectionMenu}}
         4{MainMenu}
@@ -300,8 +330,10 @@ Function SelectionMenu {
     Write-Host "5. Edit Permission"
     Write-Host "6. Add Permission"
     Write-Host "7. Remove Calendar Permission"
-    Write-Host "8. Back to main menu"
-    Write-Host "R1. Refresh User Select"
+    #Write-Host "8. Export Selected Calendar"
+    #Write-Host "9. Import Calendar to selected user"
+    Write-Host "M. Back to main menu"
+    Write-Host "R. Refresh User Select"
     Write-Host "Q. Quit"
     $SMResult = Read-Host "Option"
     Switch($SMResult){
@@ -319,13 +351,32 @@ Function SelectionMenu {
         6{Add-Calendar-Permission; Read-Host 'Press Any key to conitnue...'; SelectionMenu}
         #This option is currently being implemented
         7{Remove-Calendar-Permission; Read-Host 'Press Any key to conitnue...'; SelectionMenu}
+        #
+        #8{ExportCalendar; Read-Host 'Press any ket to  continue...'; SelectionMenu}
+        #9{ImportCalendar; Read-Host 'Press any ket to  continue...'; SelectionMenu}
         #Takes you back to the main menu
-        8{MainMenu}
-        "R1"{$Script:Users = $null; $Script:UserSelected; SelectionMenu}
+        "M"{MainMenu}
+        "R"{$Script:Users = $null; $Script:UserSelected; SelectionMenu}
         #Will reload the selection menu if an option was proivided that was not on the list
         default{SelectionMenu}
         "Q"{Exit}
     }
+}
+
+Function ExportCalendar{
+Connect-IPPSSession
+$script:ExportPath = Read-Host 'Folder Path for Export'
+$script:ExportName = Read-Host 'Name of export'
+$script:ExportName = $script:ExportName + '.pst'
+$script:ExportFullPath = $script:ExportPath + "\" + $script:ExportName
+cls
+Write-Host "Export Calendar: $Script:CalendarSelectedR"
+Write-Host "Export Path: $script:ExportFullPath"
+New-MailboxExportRequst -Mailbox $script:user -IncludeFolders $Script:CalendarSelectedR -FilePath $script:ExportFullPath
+}
+
+Function ImportCalendar{
+
 }
 
 #Builds the dynamic menu system for selecting the user who owns the calendar
@@ -335,7 +386,6 @@ Function SelectUserMenu{
     foreach($script:user in $script:users){
         '{0} - {1}' -f ($script:users.indexof($script:user) + 1), $script:user
     }
-
     #Creates an empty variable which is used within a while loop that checks if it is empty.
     #This is used to wait for the user input as when the user provides input it will cause the variable to no longer be empty thus breaking the while loop
     $script:UserSelectedIndex = $null
