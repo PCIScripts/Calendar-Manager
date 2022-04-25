@@ -172,10 +172,10 @@ Function Set-Calendar-Permission{
     Switch($Script:PermR){
         1{$Script:Perm = "Reviewer"}
         2{$Script:Perm = "Editor"}
-        3{$Script:Perm = "Publishing Editor"}
-        4{$Script:Perm = "Publishing Author"}
+        3{$Script:Perm = "PublishingEditor"}
+        4{$Script:Perm = "PublishingAuthor"}
         5{$Script:Perm = "Author"}
-        6{$Script:Perm = "Nonediting Author"}
+        6{$Script:Perm = "NoneditingAuthor"}
         7{$Script:Perm = "Contributor"}
         default{Set-Calendar-Permission}
     }
@@ -227,10 +227,10 @@ Function Add-Calendar-Permission{
     Switch($Script:PermR){
         1{$Script:Perm = "Reviewer"}
         2{$Script:Perm = "Editor"}
-        3{$Script:Perm = "Publishing Editor"}
-        4{$Script:Perm = "Publishing Author"}
+        3{$Script:Perm = "PublishingEditor"}
+        4{$Script:Perm = "PublishingAuthor"}
         5{$Script:Perm = "Author"}
-        6{$Script:Perm = "Nonediting Author"}
+        6{$Script:Perm = "NoneditingAuthor"}
         7{$Script:Perm = "Contributor"}
         default{Add-Calendar-Permission}
     }
